@@ -55,7 +55,7 @@ class DC_MyWP_LoginLogo {
 	 }
 
 	function DC_MyWP_login_logo_actions() {  
-		add_menu_page( 'My Wordpress Login Logo Options' , 'My Wordpress Login Logo', 'manage_options', 'DC_MyWP_login_logo_dashboard', array( $this, 'DC_MyWP_login_logo_options' ), DC_MyWP_LoginLogo_URL.'images/digitcodes-icon.png' ); 
+		add_options_page( 'My Wordpress Login Logo Options' , 'Admin Logo', 'manage_options', 'DC_MyWP_login_logo_dashboard', array( $this, 'DC_MyWP_login_logo_options' ), DC_MyWP_LoginLogo_URL.'images/digitcodes-icon.png' ); 
 	}
 
 	function get_image_url($custom_logo_url)
